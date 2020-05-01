@@ -6,6 +6,20 @@
     <title>images demo page</title>
 
     <style>
+
+    body {
+      background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+      background-attachment:fixed;
+      background-size: cover;
+    }
+
+      body {
+
+        background-image: url(images/mood.jpg);
+        background-attachment: fixed;
+        background-repeat: repeat-x;
+    }
+
 img {margin: 60px}
 
 #one {
@@ -14,20 +28,37 @@ img {margin: 60px}
   border: 30px solid blanchedalmond;
   border-top: 50px solid grey;
 }
+
+#two {
+  background-color: pink;
+  width: 100px;
+  height: 400px;
+}
+
+#three {
+  filter: saturate(400%);
+}
     </style>
 </head>
 
 <body>
     <h1>web demo for using images in web pages</h1>
 
-    <p>am i a lady? or am i a rat? (am I a rat??) if im rat that makes me a lady like rat. 
+    <p>am i a lady? or am i a rat? (am I a rat??) if im rat that makes me a lady like rat.
 
       <!--a demo for adding images in html and manipulating them with css. there will be three versions of the same image tweaked in different ways. there will also be either a tiled background image or a background gradient.</p>
 
     <!-- basic image tag including where to find the file and alternative text -->
     <img src="images/mood.jpg" alt="girl with silly face" id="one">
 
-    <img src="images/mood.jpg" alt="girl with silly face">
+    <img src="images/mood.jpg" alt="girl with silly face" id="three">
+
+
+    <div id="two">
+      <p>  rat check  </p>
+      <img src="images/mood.jpg" alt="girl with silly rat face" />
+
+    </div>
 
     <!-- addition of a figure tag that adds caption. preferred method for accessibility. slightly different default formatting -->
     <figure>
