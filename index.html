@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
     <title> Emily's Landing Page</title>
 
     <!-- style is how you add internal css rules to your html -->
     <style>
         html {
-            background-color: #8CB369;
+            background-color: #81547D;
             color: #333;
+          background:linear-gradient(135deg, #fcdf8a 0%,#f38381 100%);
+            cbackground-image: radial-gradient(circle at 20.05% 17.47%, #FF512F, transparent 100%),radial-gradient(circle at 97.98% 71.06%, #F09819, transparent 100%),radial-gradient(circle at 50.65% 50.72%, #757eff, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+            background-size: contain;
+            background position:center;
         }
 
         body {
@@ -21,44 +26,110 @@
         }
 
         a {
-            color: #333;
+            color: #F6F7FA;
         }
 
         .zoom {
-            color:#333;
-            font-weight:900;
+            color:;
+            font-weight:800;
 
         }
 
         .links {
           font-family:monospace;
-          background-color: #a6ca82;
+          color: #F6F7FA ;
         }
 
+        main{}
+
+          #title {
+            color: #271E1B;
+            letter-spacing: 1px;
+            text-align:center
 
 
+          }
+
+          #one {
+            background-color: #81547D70;
+            border: 1px solid #444;
+            padding:50px;
+            margin:40px;
+
+
+            background-size: contain;
+            background position:center;
+            border-radius: 70px;
+            height:50px;
+            text-align:center;
+            padding-top: 50px;
+            color: #F6F7FA;
+            letter-spacing: 1px;
+
+          }
+
+          #two {
+            background-color: #81547D70;
+            border: 1px solid #444;
+            padding:50px;
+            margin:40px;
+
+
+            background-size: contain;
+            border-radius: 70px;
+            height:90px;
+            text-align:center;;
+            line-height: 1.4rem;
+            margin-bottom: 50px;
+            text-align: left;
+            letter-spacing: 1px;
+
+          }
+
+          #beau {
+            text-align: center;
+            color: #271E1B;
+
+          }
     </style>
 
 </head>
 
 <body>
     <!-- headline text -->
-    <h1 class="zoom"> Emily's Landing Page</h1>
+    <h1 id="title"> Emily's Landing Page</h1>
 
 
     <!-- introduction text -->
-    <h3>Welcome to my page!<h2></h2>
+    <h3 id="title">Welcome to my page!<h2></h2>
 
-  <blockquote>
+  <div id="one">
     <p class="zoom">Heres the link to all of the assignments ive broke my brain for!</p>
+  </div>
+
+  <div id="two">
     <ul class="links">
-        <li><strong><a href="songanalysis.html" target="_blank">text.html</a></strong> -
+        <li><strong><a href="songanalysis.html" target="_blank"> html text demo</a></strong> -
             html text assignment </li>
+
+        <li><strong><a href="imagesdemo.html" target="_blank">images demo</a></strong> -
+            images assignment
+        </li>
+        <li><strong><a href="boxes.html" target="_blank">box demo.html</a></strong> -
+            images assignment
+        </li>
+
         <li>
           <em>link coming soon!</em>
         </li>
     </ul>
-</blockquote>
+  </div>
+
+<img src="Images/Beau_NH.png" alt="Beau from the videogame series Animal Crossing" id="beau"/>
+
+<p id="beau">
+  Beau is the best i will die for him
+</p>
 
 </body>
 
