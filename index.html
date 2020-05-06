@@ -14,6 +14,8 @@
             cbackground-image: radial-gradient(circle at 20.05% 17.47%, #FF512F, transparent 100%),radial-gradient(circle at 97.98% 71.06%, #F09819, transparent 100%),radial-gradient(circle at 50.65% 50.72%, #757eff, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
             background-size: contain;
             background position:center;
+            background-attachment:fixed;
+            background size: cover;
         }
 
         body {
@@ -45,9 +47,14 @@
           #title {
             color: #271E1B;
             letter-spacing: 1px;
+            text-align:center;
+            font-size: 50px
+          }
+
+          #titletwo {
+            color: #271E1B;
+            letter-spacing: 1px;
             text-align:center
-
-
           }
 
           #one {
@@ -65,6 +72,7 @@
             padding-top: 50px;
             color: #F6F7FA;
             letter-spacing: 1px;
+            font-size: 20px
 
           }
 
@@ -77,20 +85,28 @@
 
             background-size: contain;
             border-radius: 70px;
-            height:90px;
+            height:140px;
             text-align:center;;
             line-height: 1.4rem;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             text-align: left;
             letter-spacing: 1px;
-
+            font-size: 15px;
+<!-- change the box height if the text needs room-->
           }
 
           #beau {
             text-align: center;
             color: #271E1B;
-
+            font-size: 30px;
           }
+
+          .beau {
+            position: relative;
+            left:110px;
+            top:0px;
+          }
+
     </style>
 
 </head>
@@ -101,10 +117,11 @@
 
 
     <!-- introduction text -->
-    <h3 id="title">Welcome to my page!<h2></h2>
+    <h3 id="titletwo">Welcome to my page!<h2></h2>
 
   <div id="one">
-    <p class="zoom">Heres the link to all of the assignments ive broke my brain for!</p>
+    <p class="zoom">Heres the link to all of the assignments
+      i've broke my brain for!</p>
   </div>
 
   <div id="two">
@@ -115,8 +132,17 @@
         <li><strong><a href="imagesdemo.html" target="_blank">images demo</a></strong> -
             images assignment
         </li>
-        <li><strong><a href="boxes.html" target="_blank">box demo.html</a></strong> -
-            images assignment
+        <li><strong><a href="boxes.html" target="_blank">box demo</a></strong> -
+            boxes assignment
+        </li>
+
+        <li>
+          <strong><a href="positioning.html" target="_blank">positioning demo</a></strong> -
+              positioning assignment
+        </li>
+
+        <li>
+          <em>link coming soon!</em>
         </li>
 
         <li>
@@ -124,8 +150,9 @@
         </li>
     </ul>
   </div>
-
-<img src="Images/Beau_NH.png" alt="Beau from the videogame series Animal Crossing" id="beau"/>
+<div class="beau">
+  <img src="Images/Beau_NH.png" alt="Beau from the videogame series Animal Crossing" class="beau"/>
+</div>
 
 <p id="beau">
   Beau is the best i will die for him
