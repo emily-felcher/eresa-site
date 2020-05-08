@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://lcc-adm.github.io/web-demo/boxes.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>boxes demo page</title>
+
+  <style>
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+
+    /* now back to regular styling */
+    body {
+      color: #14080E;
+      background-color: #E8E5E7;
+    }
+
+    header {}
+
+    main {}
+
+    #one {
+      background-color: #E9EB9E70; /*two numbers at end are opacity*/
+      border: 2px solid #000;
+      padding: 20px;
+      margin: 50px ;
+      margin-left: auto;
+      margin-right:auto;
+      width:300px;
+      height: 100px;
+      text-align: center;
+      border-radius: 50px
+
+    }
+
+    #two {
+      background-color: #ACC196;
+      border: 5px solid #444;
+      padding:50px;
+      margin:40px;
+
+      background-image: radial-gradient(circle at 20.05% 17.47%, #FF512F, transparent 100%),radial-gradient(circle at 97.98% 71.06%, #F09819, transparent 100%),radial-gradient(circle at 50.65% 50.72%, #757eff, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+      background-size: contain;
+      background position:center;
+      border-radius: 1000px 1000px 70px 70px;
+      height:300px;
+      text-align:center;
+      padding-top: 100px;
+
+    }
+
+    #three {
+      background-color: #799496;
+      padding:100px;
+      border-radius: 100px 100px 1000px 1000px;
+      margin:30px;
+      text-align:center;
+
+      background-image: radial-gradient(circle at 20.05% 17.47%, #FF512F, transparent 100%),radial-gradient(circle at 97.98% 71.06%, #F09819, transparent 100%),radial-gradient(circle at 50.65% 50.72%, #757eff, transparent 100%),radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+      border: 5px solid #444;
+    }
+
+    #four {
+      background-color: #49475B;
+      padding: 50px;
+      border-radius:80px;
+      border: 3px solid #999
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>web demo for exploring the box model in web pages</h1>
+  </header>
+
+  <main>
+    <!-- a box is called a div in html -->
+
+    <div id="one">
+      <p>content goes here.</p>
+    </div>
+
+    <div id="two">
+      <p>content goes here.</p>
+    </div>
+
+    <!-- this div has another div inside it -->
+    <div id="three">
+      <div id="four">
+        <p>content goes here.</p>
+      </div>
+      <p>content goes here.</p>
+    </div>
+
+  </main>
+
+
+
+</body></html>
