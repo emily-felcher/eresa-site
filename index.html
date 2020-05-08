@@ -5,10 +5,13 @@
 <head>
     <title> Emily's Landing Page</title>
 
+
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     <!-- style is how you add internal css rules to your html -->
     <style>
+    *{margin: 0;}
+
         html {
             background-color: #81547D;
             color: #333;
@@ -18,6 +21,22 @@
             background position:center;
             background-attachment:fixed;
             background size: cover;
+        }
+
+
+        header {
+            position: static;
+            top: 0;
+            background: #81547D70;
+            color: #eee;
+            padding: 1rem;
+            text-align: center;
+            color: #271E1B;
+            letter-spacing: 1px;
+            font-size: 35px;
+            font-family: 'Abril Fatface', cursive;
+
+
         }
 
         body {
@@ -47,12 +66,7 @@
         main{}
 
           #title {
-            color: #271E1B;
-            letter-spacing: 1px;
-            text-align:center;
-            font-size: 70px;
-            font-family: 'Abril Fatface', cursive;
-            font-weight: 400;
+
           }
 
           #titletwo {
@@ -60,7 +74,7 @@
             letter-spacing: 1px;
             text-align:center;
             font-size: 30px;
-            font-family: 'Abril Fatface', cursive;
+            font-family: 'Abril Fatfce', cursive;
           }
 
           #one {
@@ -73,12 +87,12 @@
             background-size: contain;
             background position:center;
             border-radius: 70px;
-            height:50px;
+            height:90px;
             text-align:center;
             padding-top: 50px;
             color: #271E1B;
             letter-spacing: 1px;
-            font-size: 20px
+            font-size: 25px
 
           }
 
@@ -165,16 +179,17 @@
 
 </head>
 
+
+
 <body>
-    <!-- headline text -->
-    <h1 id="title"> Emily's Landing Page</h1>
 
+  <header>
+      <h1 id="title"> Emily's Landing Page</h1>
 
-    <!-- introduction text -->
-    <h3 id="titletwo">Welcome to my page!<h2></h2>
+  </header>
 
   <div id="one">
-    <p class="zoom">Heres the links to all of the assignments
+    <p class="zoom">Welcome to my page! Here's the links to all of the assignments
       i've broke my brain for!</p>
   </div>
 
