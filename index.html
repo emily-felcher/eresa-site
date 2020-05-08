@@ -5,6 +5,8 @@
 <head>
     <title> Emily's Landing Page</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
     <!-- style is how you add internal css rules to your html -->
     <style>
         html {
@@ -48,13 +50,17 @@
             color: #271E1B;
             letter-spacing: 1px;
             text-align:center;
-            font-size: 50px
+            font-size: 70px;
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 400;
           }
 
           #titletwo {
             color: #271E1B;
             letter-spacing: 1px;
-            text-align:center
+            text-align:center;
+            font-size: 30px;
+            font-family: 'Abril Fatface', cursive;
           }
 
           #one {
@@ -70,7 +76,7 @@
             height:50px;
             text-align:center;
             padding-top: 50px;
-            color: #F6F7FA;
+            color: #271E1B;
             letter-spacing: 1px;
             font-size: 20px
 
@@ -85,7 +91,7 @@
 
             background-size: contain;
             border-radius: 70px;
-            height:140px;
+            height:400px;
             text-align:center;;
             line-height: 1.4rem;
             margin-bottom: 60px;
@@ -107,6 +113,54 @@
             top:0px;
           }
 
+          .rectangle-list a{
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em .8em;
+            *padding: .4em;
+            margin: .5em 0 .5em 2.5em;
+            background: #EBC7C770;
+            color: #444;
+            text-decoration: none;
+            transition: all .3s ease-out;
+     }
+
+     .rectangle-list a:hover{
+            background: #eee;
+     }
+
+     .rectangle-list a:before{
+          content: counter(li);
+          counter-increment: li;
+          position: absolute;
+          left: -2.5em;
+          top: 50%;
+          margin-top: -1em;
+          background: #FF9E7B;
+          height: 2em;
+          width: 2em;
+          line-height: 2em;
+       text-align: center;
+       font-weight: bold;
+       border-radius: 10px
+     }
+
+     .rectangle-list a:after{
+        position: absolute;
+        content: '';
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;
+     }
+
+     .rectangle-list a:hover:after{
+       left: -.5em;
+       border-left-color: #fa8072;
+     }
+
+
     </style>
 
 </head>
@@ -120,33 +174,33 @@
     <h3 id="titletwo">Welcome to my page!<h2></h2>
 
   <div id="one">
-    <p class="zoom">Heres the link to all of the assignments
+    <p class="zoom">Heres the links to all of the assignments
       i've broke my brain for!</p>
   </div>
 
   <div id="two">
-    <ul class="links">
+    <ul class="rectangle-list">
         <li><strong><a href="songanalysis.html" target="_blank"> html text demo</a></strong> -
-            html text assignment </li>
+             </li>
 
         <li><strong><a href="imagesdemo.html" target="_blank">images demo</a></strong> -
-            images assignment
+
         </li>
         <li><strong><a href="boxes.html" target="_blank">box demo</a></strong> -
-            boxes assignment
+
         </li>
 
         <li>
           <strong><a href="positioning.html" target="_blank">positioning demo</a></strong> -
-              positioning assignment
+
         </li>
 
         <li>
-          <em>link coming soon!</em>
+          <strong><a href="" target="_blank"><em>link coming soon!</em></a></strong>-
         </li>
 
         <li>
-          <em>link coming soon!</em>
+          <strong><a href="" target="_blank"><em>link coming soon!</em></a></strong>-
         </li>
     </ul>
   </div>
