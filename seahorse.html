@@ -10,7 +10,7 @@
 
   <meta charset="utf-8">
   <title>seahorse serenity</title>
-  
+
   <link rel="shortcut icon" href="favicon (4).ico" type="image/x-icon">
   <link rel="icon" href="favicon (4).ico" type="image/x-icon">
 
@@ -36,7 +36,7 @@
     padding: 2rem;
 }
 /*content*/
-  header {font-family: 'Josefin Sans', sans-serif;color:#461205}
+  header {font-family: 'Josefin Sans', sans-serif;color:#461205;height: 150px; width: 100%;}
 
   main {;}
 
@@ -51,18 +51,32 @@
   footer p {color: #46120580}
 
 /*headercontent*/
-  header h1{
-    float:left;
-    padding-top: 50px;
-    padding-right: 10px
-    color: #461205
+  header #headline{
+    width: 50%;
+             float: left;
+             /* center headline vert and horiz */
+             text-align: left;
+             display: flex;
+             justify-content: center;
+             flex-direction: column;
+             height: 100%
     }
 
+header figure{
+            height: 100%;
+            width: 50%;
+            float: left;
+            margin: 0;
+            padding: 0;
+}
+
   #headerImg {
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     background: #666;
-    float: right; }
+    object-fit:cover;
+    object-position: left center;
+   }
 
   /*main content*/
   nav{background: #3ACF3C; width: 30%; float: left; font-family: 'Josefin Sans', sans-serif;color:#461205; }
@@ -92,8 +106,13 @@ nav a:hover {background: #D28658;}
 
 <body>
   <header class="clearfix">
-    <h1>(Sea)Horsin' Around</h1>
-    <img id="headerImg" src="Images/horse.jpg" alt="seahorses are fun" />
+    <div id="headline">
+      <h1>(Sea)Horsin' Around</h1>
+    </div>
+    <figure>
+        <img id="headerImg" src="Images/horse.jpg" alt="seahorses are fun" />
+    </figure>
+
   </header>
 
   <main class="clearfix">
