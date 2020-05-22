@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+<style>
+#bod {
+  width: 210px;
+  height: 120px;
+  background-color:#979797;
+  border-radius: 52% 48% 49% 51% / 47% 51% 49% 53%;
+  position: absolute;
+  left: 270px;
+  top: 90px;
+  z-index: 5;
+  animation-name: bop;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+
+#chomper {
+  width: 120px;
+  height: 100px;
+  background-color:#E0E0E0;
+  border-radius: 26% 74% 22% 78% / 51% 94% 6% 49%;
+  position: absolute;
+  left: 410px;
+  top: 110px;
+  z-index: 10;
+  animation-name: bop;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+
+#nose {
+    width:20px;
+    height: 20px;
+    background-color:pink;
+    border-radius: 100%;
+    position: absolute;
+    left: 515px;
+    top: 190px;
+    z-index: 11;
+    animation-name: bop;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+#eye {
+    width:20px;
+    height: 20px;
+    background-color:black;
+    border-radius: 100%;
+    position: absolute;
+    left: 440px;
+    top: 155px;
+    z-index: 11;
+    animation-name: bop;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+#ear {
+    width:30px;
+    height: 40px;
+    background-color:black;
+    border-radius: 50% 50% 100% 0% / 98% 64% 36% 2%   ;
+    position: absolute;
+    left: 420px;
+    top: 110px;
+    z-index: 11;
+    animation-name: bop;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+#ear2 {
+    width:30px;
+    height: 40px;
+    background-color:black;
+    border-radius: 50% 50% 100% 0% / 98% 64% 36% 2%   ;
+    position: absolute;
+    left: 470px;
+    top: 90px;
+    animation-name: bop;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+}
+
+#leg {
+  width: 50px;
+  height: 80px;
+  background-color:pink;
+  border-radius: 34% 66% 62% 38% / 51% 92% 8% 49% ;
+  position: absolute;
+  left: 285px;
+  top: 150px;
+  z-index:10;
+  animation-name: walk;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+#leg2 {
+  width: 50px;
+  height: 80px;
+  background-color:pink;
+  border-radius: 34% 66% 62% 38% / 51% 92% 8% 49% ;
+  position: absolute;
+  left: 367px;
+  top: 150px;
+  z-index:6;
+  animation-name: walk2;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+#leg3 {
+  width: 50px;
+  height: 80px;
+  background-color:#E285A4;
+  border-radius: 34% 66% 62% 38% / 51% 92% 8% 49% ;
+  position: absolute;
+  left: 310px;
+  top: 150px;
+  animation-name: walk;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+#leg4 {
+  width: 50px;
+  height: 80px;
+  background-color:#E285A4;
+  border-radius: 34% 66% 62% 38% / 51% 92% 8% 49% ;
+  position: absolute;
+  left: 410px;
+  top: 150px;
+  animation-name: walk2;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+
+#tail {
+  width: 100px;
+  height: 10px;
+  background-color:pink;
+  border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  ;
+  position: absolute;
+  left: 180px;
+  top: 150px;
+  animation-name: bop;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes walk {
+  0%   {transform: rotate(10deg);}
+  25%  {transform: rotate(-20deg);}
+  50% {transform: rotate(20deg);}
+  75%  {transform: rotate(-20deg);}
+  100% {transform: rotate(10deg);}
+}
+
+@keyframes walk2 {
+  0%   {transform: rotate(-10deg);}
+  25%  {transform: rotate(30deg);}
+  50% {transform: rotate(-30deg);}
+  75%  {transform: rotate(30deg);}
+  100% {transform: rotate(-10deg);}
+}
+
+@keyframes bop {
+  0%   {transform: translate(0px); ;}
+  25%  {transform: translate(0,-10px);;}
+  50% {transform: translate(0,0px);}
+  75%  {transform: translate(0,-10px);}
+  100% {transform: translate(0px);}
+}
+
+p {text-align: center;}
+</style>
+
+
+</head>
+<body>
+
+<div id="ear"></div>
+
+<div id="ear2"></div>
+
+<div id="nose"></div>
+
+<div id="leg"></div>
+
+<div id="leg2"></div>
+
+<div id="leg3"></div>
+
+<div id="leg4"></div>
+
+<div id="bod" ></div>
+
+<div id="chomper"></div>
+
+<div id="eye"></div>
+
+<div id="tail"></div>
+
+<p>
+  He do be strutting tho!
+</p>
+
+</body>
+</html>
