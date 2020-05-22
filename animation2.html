@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  #head {
+    width: 400px;
+    height: 400px;
+    background-color:#FFB070;
+    border-radius: 50%;
+    position:absolute;
+    left: 300px;
+    top:300px;
+    z-index: 1;
+  }
+
+#horn {
+  width: 100;
+  height: 200;
+  background-color: #F5DF89;
+  border-radius: 18% 82% 53% 47% / 49% 100% 0% 51% ;
+  position:absolute;
+  left: 330px;
+  top:150px;
+}
+
+#horn2 {
+  width: 100;
+  height: 200;
+  background-color: #F5DF89;
+  border-radius: 77% 23% 53% 47% / 100% 48% 52% 0%  ;
+  position:absolute;
+  left: 570px;
+  top:150px;
+}
+
+  #ear {
+    width: 150px;
+    height: 250px;
+    background-color:#FFB070;
+    border-radius: 21% 79% 22% 78% / 55% 53% 47% 45% ;
+    position: absolute;
+    left: 200;
+    top: 230;
+    z-index: 2;
+  }
+
+  #earinside {
+    width: 100px;
+    height: 200px;
+    background-color:#FFF7D7;
+    border-radius: 21% 79% 22% 78% / 55% 53% 47% 45% ;
+    position: absolute;
+    left: 220;
+    top: 275;
+    z-index: 2;
+  }
+
+  #ear2 {
+    width: 150px;
+    height: 250px;
+    background-color:#FFB070;
+    border-radius: 76% 24% 83% 17% / 55% 53% 47% 45% ;
+    position: absolute;
+    left: 650;
+    top: 230;
+    z-index: 2;
+  }
+
+  #ear2inside {
+    width: 100px;
+    height: 200px;
+    background-color:#FFF7D7;
+    border-radius: 76% 24% 83% 17% / 55% 53% 47% 45% ;
+    position: absolute;
+    left: 680;
+    top: 275;
+    z-index: 10;
+  }
+
+  #eyebag {
+    width: 120;
+    height: 150;
+    background-color: #FFF6D6;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 330px;
+    top: 420;
+    z-index: 2
+  }
+
+  #eyelid {
+    width: 92;
+    height: 70;
+    background-color: #FFCF8D;
+    border-radius: 51% 49% 49% 51% / 100% 100% 0% 0%;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 337px;
+    top: 430;
+    z-index: 10;
+  }
+
+  #eyelash {
+    width: 92;
+    height: 20;
+    background-color: black;
+    border-radius: 49% 51% 53% 47% / 100% 100% 0% 0%;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 340px;
+    top: 481;
+    z-index: 10;
+}
+
+  #eye {
+    width: 90;
+    height: 120;
+    background-color:#4F7CD6;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 345px;
+    top: 440;
+    z-index: 2;
+
+
+  }
+
+  #eyepupil {
+    width: 60;
+    height: 90;
+    background-color:black;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(-10deg);
+    position: absolute;
+    left: 360px;
+    top: 455;
+    z-index: 6;
+  }
+
+  #eyebag2 {
+    width: 120;
+    height: 150;
+    background-color: #FFF6D6;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 550px;
+    top: 420;
+    z-index: 2;
+  }
+
+  #eyelid2 {
+    width: 92;
+    height: 70;
+    background-color: #FFCF8D;
+    border-radius: 51% 49% 49% 51% / 100% 100% 0% 0%;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 570px;
+    top: 430;
+    z-index: 10;
+  }
+
+  #eyelash2 {
+    width: 92;
+    height: 20;
+    background-color: black;
+    border-radius: 49% 51% 53% 47% / 100% 100% 0% 0%;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 565px;
+    top: 481;
+    z-index: 10;
+    animation-name: wink;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+  }
+
+  #eye2 {
+    width: 90;
+    height: 120;
+    background-color:#4F7CD6;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 565px;
+    top: 440;
+    z-index: 2;
+    animation-name: wink;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+  }
+
+  #eye2pupil {
+    width: 60;
+    height: 90;
+    background-color:black;
+    border-radius: 51% 49% 49% 51% / 49% 50% 50% 51%;
+    transform: rotate(10deg);
+    position: absolute;
+    left: 579px;
+    top: 455;
+    z-index: 6;
+    animation-name: wink;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+
+  }
+
+  #muzzle {
+    width: 250px;
+    height: 150px;
+    background-color: #FFF6D6;
+    border-radius: 49% 51% 48% 52% / 44% 41% 59% 56% ;
+    position: absolute;
+    left: 375px;
+    top: 555px;
+    z-index: 2;
+  }
+
+
+
+#nose {
+  width: 100px;
+  height:50px;
+  background-color: #4C3C30;
+  border-radius: 49% 51% 48% 52% / 54% 47% 53% 46% ;
+  position: absolute;
+  left: 450px;
+  top: 555px;
+  z-index: 2;
+}
+
+@keyframes wink {
+  0% {}
+ 25% {background-color: #FFCF8D;}
+ 50% {background-color: #FFCF8D;}
+ 75% {background-color: #FFCF8D;}
+100% {background-color: #FFCF8D;}
+}
+
+
+  </style>
+<body>
+  <div id="head"></div>
+
+  <div id="horn"></div>
+
+  <div id="horn2"></div>
+
+<div id="ear"></div>
+
+<div id="earinside"></div>
+
+<div id="ear2"></div>
+
+<div id="ear2inside"></div>
+
+<div id="eyebag"></div>
+
+<div id="eyelid"></div>
+
+<div id="eyelash"></div>
+
+<div id="eye"></div>
+
+<div id="eyepupil"></div>
+
+<div id="eyebag2"></div>
+
+<div id="eyelid2"></div>
+
+<div id="eyelash2"></div>
+
+<div id="eye2"></div>
+
+<div id="eye2pupil"></div>
+
+<div id="muzzle"></div>
+
+<div id="nose"></div>
+
+</body>
+</html>
